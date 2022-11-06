@@ -1,0 +1,36 @@
+.popular {
+
+    &__wrapper {
+        margin-bottom: 50px;
+
+    }
+    &__block {
+        gap: 25px;
+    }
+
+    .content {
+        &__wrapper {
+            margin-bottom: 15px;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__big-button {
+        display: block;
+        margin: 0 auto;
+        @include text;
+        font-weight: 700;
+        color: $whiteColor;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        padding: 9.5px 45px;
+        border: none;
+        background-color: $textColor;
+        transition: background-color .3s ease;
+        &:hover, &:active {
+            background-color: $grey900;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.main {
+    padding-top: 0;
+
+    .container {
+        padding: 0 15px;
+    }
+    .section {
+        &:nth-child(2) {
+            width: 570px;
+        }
+    }
+    section {
+        margin-bottom: 90px;
+    }
+    
+    h2.title {
+        font-size: rem(48px);
+        letter-spacing: 0.05rem;
+        margin-bottom: 70px;
+    }
+}

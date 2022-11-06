@@ -1,0 +1,30 @@
+.footer {
+    padding: 70px 15px;
+    text-align: left;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: rem(48px);
+        line-height: 1.25;
+        margin-bottom: 30px;
+    }
+
+    &__contacts {
+        margin-bottom: 0;
+    }
+
+    &__social{
+        justify-content: right;
+        margin-bottom: 0;
+    }
+
+    &__rights{
+        text-align: center;
+    }
+}

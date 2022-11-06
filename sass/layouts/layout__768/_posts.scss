@@ -1,0 +1,44 @@
+.main {
+    .posts {
+        &__wrapper{
+            gap: 0;
+            &:nth-child(2) {
+                column-gap: 20px;
+                row-gap: 30px;
+            }
+        }
+        &__block {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            &:nth-child(even) {
+                .posts__content {
+                    order: -1;
+                }
+            }
+        }
+    
+        &__image{
+            .image {
+                img {
+                    height: 240px;
+                }
+            }
+        }
+
+        .content {
+            height: 240px;
+            overflow: hidden;
+            
+            &__wrapper {
+                margin-bottom: 25px;
+            }
+        
+            &__title {
+                margin-bottom: 20px;
+            }
+            &__subtitle {
+                font-size: rem(12px);
+            }
+        }
+    }
+}

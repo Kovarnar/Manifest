@@ -1,0 +1,20 @@
+.nav {
+    &__list {
+        position: inherit;
+        flex-direction: row;
+        gap: 35px;
+        height: 20px;
+        padding: 0;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        font-size: rem(14px);
+    }
+    &__burger {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+.main {
+    background-color: $whiteColor;
+    
+    section {
+        margin-bottom: 70px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 50px;
+        &--top{
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    .title-2{
+        @include title;
+        font-weight: 500;
+        font-size: rem(28px);
+        letter-spacing: 0.05rem;
+        line-height: 1.286;  //1.66;
+    }
+    .image {
+        img {
+            min-width: 100%;
+            height: unset;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .arrow-view {
+        justify-self: start;
+        background-color: transparent;
+        border: none;
+        @include text;
+        color: $grey500;
+        letter-spacing: 0.1rem;
+        &:hover, &:active {
+            color: $blackColor;
+            .icon {
+                fill: $blackColor;
+            }
+        }
+    }
+}

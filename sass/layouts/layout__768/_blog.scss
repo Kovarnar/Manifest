@@ -1,0 +1,35 @@
+.main {
+    .blog {
+        &__wrapper{
+            row-gap: 50px;
+        }
+
+        &__title {
+            text-align: left;
+        }
+        &__block {
+            &.block{
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+                column-gap: 20px;
+            }
+            &:first-child{
+                .blog__image {
+                    order: -1;
+                }
+            }
+        }
+
+        &__content {
+            overflow: hidden;
+            &__title {
+                margin-bottom: 15px;
+                font-size: rem(23px);
+            }
+            &__text {
+                &::after {
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@function rem($target) {
+    @return ($target/$baseFontSize) * 1rem;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin title{
+    color: $blackColor;
+    font-family: $redHatDisplayFont;
+}
+
+@mixin text {
+    font-family: $latoFont;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 1.66;
+}

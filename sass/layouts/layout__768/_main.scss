@@ -1,0 +1,26 @@
+.main {
+    .container {
+        padding: 0 34px;
+    }
+    .wrapper {
+        &--top{
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            .arrow-view {
+                justify-self: end;
+            }
+        }
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .title-2 {
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        line-height: 1.358;
+}
+}

@@ -1,0 +1,58 @@
+.main {
+    .blog {
+        &__wrapper{
+            row-gap: 50px;
+        }
+
+        &__title {
+            text-align: left;
+        }
+        &__block {
+            &.block{
+                column-gap: 30px;
+                &:nth-child(even) {
+                    .content {
+                        align-items: flex-end;
+                    }
+                }
+            }
+        
+        }
+
+        &__content {
+            align-self: center;
+            
+        }
+        .content {
+            &__subtitle {
+                width: 450px;
+            }
+            &__title {
+                width: 450px;
+            }
+            &__date {
+                width: 450px;
+                margin-bottom: 50px;
+            }
+            &__text {
+                width: 450px;
+            }
+        }
+    }
+}
+
+
+.content {
+
+    &__subtitle {
+    }
+
+    &__title {
+    }
+
+    &__date {
+    }
+
+    &__text {
+    }
+}

@@ -1,0 +1,27 @@
+.header {
+    .icon {
+        width: 100%;
+        height: 100%;
+        fill: $blackColor;
+    }
+}
+
+.main {
+    .icon {
+        width: 24px;
+        height: 12px;
+        fill: $grey500;
+    }
+}
+
+.footer{
+    .icon {
+        width: 24px;
+        height: 24px;
+        fill: $textColor;
+        stroke: $textColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

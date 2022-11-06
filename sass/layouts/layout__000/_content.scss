@@ -1,0 +1,35 @@
+.content {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        @include text;
+        letter-spacing: 0.1rem;
+        color: $grey500;
+    }
+
+    &__title {
+        @include title;
+        font-weight: 500;
+        font-size: rem(22px);
+        letter-spacing: 0.1rem;
+        line-height: 1.66;
+    }
+
+    &__date {
+        @include text;
+        letter-spacing: 0.1rem;
+        color: $grey500;
+    }
+    
+    &__text {
+        @include text;
+        letter-spacing: 0.05rem;
+        color: $textColor;
+    }
+}

@@ -1,0 +1,22 @@
+.hero {
+    min-height: 600px;
+    background-image: url('../img/desktop/bg-image.webp');
+    .container {
+        padding: 100px 34px;
+    }
+    &__title {
+        font-size: rem(40px);
+        line-height: 1.333;
+    }
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../img/desktop/bg-image@2x.webp');
+    }
+}
+@media screen and (min-resolution: 3dppx) {
+    .hero {
+        background-image: url('../img/desktop/bg-image@3x.webp');
+    }
+}

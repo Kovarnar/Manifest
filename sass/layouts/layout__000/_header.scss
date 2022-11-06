@@ -1,0 +1,19 @@
+.header{
+    position: relative;
+    background-color: $whiteColor;
+    .container {
+        @include flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 19px 10px;
+    }
+    &__logo {
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+.hero {
+    .container {
+        padding: 100px 135px;
+    }
+    &__title {
+        font-size: rem(48px);
+    }
+}

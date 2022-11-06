@@ -1,0 +1,28 @@
+.hero {
+    min-height: 500px;
+    background-image: url('../img/mobile/bg-image.webp');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    .container {
+        padding: 70px 10px;
+    }
+    &__title {
+        @include title;
+        font-size: rem(30px);
+        font-weight: 600;
+        line-height: 1.667;
+        letter-spacing: 0.05rem;
+    }
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../img/mobile/bg-image@2x.webp');
+    }
+}
+@media screen and (min-resolution: 3dppx) {
+    .hero {
+        background-image: url('../img/mobile/bg-image@3x.webp');
+    }
+}

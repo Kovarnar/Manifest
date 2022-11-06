@@ -1,0 +1,70 @@
+.footer {
+    background-color: $footerColor;
+    color: $blackColor;
+    text-align: center;
+
+    .container {
+        padding: 50px 10px;
+    }
+    
+    &__title {
+        font-size: rem(32px);
+        letter-spacing: 0.05rem;
+        line-height: 1.31;
+        font-family: $redHatDisplayFont;
+        margin-bottom: 20px;
+    }
+
+    &__contacts {
+        margin-bottom: 40px;
+        a {
+            font-size: rem(18px);
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            line-height: 1.66;
+            font-family: $latoFont;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__social{
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+        margin-bottom: 40px;
+        * {
+            transition: all .3s ease;
+        }
+    }
+    &__social-item {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid $textColor;
+        }
+        &:hover {
+            a {
+                background-color: $textColor;
+            }
+            .icon {
+                fill: $whiteColor;
+            }
+        }
+        &:active {
+            transform: scale(0.85);
+        }
+    }
+
+    &__rights {
+        font-size: rem(16px);
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        line-height: 1.66;
+        font-family: $latoFont;
+    }
+}

@@ -1,0 +1,16 @@
+.posts {
+    &__block {
+        gap: 25px;
+    }
+
+    .content {
+
+        &__wrapper {
+            margin-bottom: 25px;
+        }
+    
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}

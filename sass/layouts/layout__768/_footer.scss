@@ -1,0 +1,17 @@
+.footer {
+    .container {
+        padding: 0 34px;
+    }
+    &__title {
+        font-size: rem(48px);
+        line-height: 1.334;
+    }
+
+    &__contacts {
+        font-size: rem(16px);
+    }
+
+    &__rights {
+        font-size: rem(12px);
+    }
+}

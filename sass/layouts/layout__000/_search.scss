@@ -1,0 +1,19 @@
+.search {
+    order: -1;
+    &__lable {
+        @include flex;
+        width: 20px;
+        height: 20px;
+    }
+    &__input {
+        display: none;
+        border: none;
+        border-bottom: 1px solid $blackColor;
+        &::placeholder {
+            font-family: $latoFont;
+            font-size: 12px;
+            letter-spacing: 0.1rem;
+            line-height: 1.663;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.info {
+    &__left {
+        gap: 13.15px;
+    }
+    &__title {
+        font-size: rem(23px);
+    }
+
+    &__right {
+        justify-content: end;
+    }
+    
+    &__text {
+        width: 630px;
+        text-align: end;
+        font-size: rem(19px);
+        line-height: 1.684;
+    }
+}

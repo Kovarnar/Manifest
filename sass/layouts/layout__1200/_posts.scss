@@ -1,0 +1,45 @@
+.main {
+    .posts {
+        &__wrapper{
+            gap: 0;
+            &:nth-child(2) {
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 30px;
+                row-gap: 0;
+            }
+        }
+        &__block {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            &:nth-child(even) {
+                .posts__content {
+                    order: 0;
+                }
+            }
+        }
+    
+        &__image{
+            .image {
+                img {
+                    height: 240px;
+                }
+            }
+        }
+
+        .content {
+            height: 240px;
+            overflow: hidden;
+            
+            &__wrapper {
+                margin-bottom: 25px;
+            }
+        
+            &__title {
+                margin-bottom: 20px;
+            }
+            &__subtitle {
+                font-size: rem(12px);
+            }
+        }
+    }
+}

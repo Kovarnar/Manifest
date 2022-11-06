@@ -1,0 +1,25 @@
+.main {
+    .popular {
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            column-gap: 20px;
+        }
+        &__block {
+            &--vertical {
+                justify-content: start;
+            }
+        }
+        .content {
+            &__wrapper {
+                margin-bottom: 20px;
+            }
+            &__title {
+                margin-bottom: 20px;
+            }
+            &__subtitle {
+                font-size: rem(12px);
+            }
+        }
+    }
+}
