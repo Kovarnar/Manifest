@@ -1,19 +1,35 @@
 .search {
+    position: relative;
     order: -1;
-    &__lable {
-        @include flex;
+    &__button {
         width: 20px;
         height: 20px;
+        background-color: $whiteColor;
+        border: none;
+        position: relative;
+        z-index: 10;
     }
     &__input {
+        position: absolute;
+        z-index: 5;
+        right: 0;
         display: none;
         border: none;
-        border-bottom: 1px solid $blackColor;
+        padding: 0 0 3px 0;
+        font-family: $latoFont;
+        color: $blackColor;
+        letter-spacing: 0.05rem;
         &::placeholder {
             font-family: $latoFont;
             font-size: 12px;
             letter-spacing: 0.1rem;
             line-height: 1.663;
+        }
+    }
+    &:hover, &:active, &:focus {
+        .search__input {
+            display: unset;
+            border-bottom: 1px solid $blackColor;
         }
     }
 }

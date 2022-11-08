@@ -5,7 +5,7 @@
         color: $grey500;
         letter-spacing: 0.1rem;
         text-transform: capitalize;
-        background-color: transparent;
+        background-color: $whiteColor;
         border: none;
         transition: all .3s ease;
         &:hover, &:active {
@@ -19,13 +19,16 @@
         justify-self: start;
     }
     .arrow--read {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
         span {
-            letter-spacing: 0;
-            font-size: 0;
+            display: none;
             transition: all .3s ease;
         }
         &:hover, &:active {
             span {
+                display: unset;
                 letter-spacing: 0.1rem;
                 font-size: 1rem;
             }

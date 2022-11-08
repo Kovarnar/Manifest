@@ -3,11 +3,11 @@
         &__wrapper{
             row-gap: 50px;
         }
-
         &__title {
             text-align: left;
         }
         &__block {
+            
             &.block{
                 grid-template-columns: 1fr 1fr;
                 gap: 0;
@@ -19,17 +19,40 @@
                 }
             }
         }
-
         &__content {
             &__title {
                 margin-bottom: 15px;
                 font-size: rem(23px);
             }
-            
         }
         .content {
+            
+            &__text {
+                position: relative;
+                span {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
             &__arrow {
-                display: unset;
+                display: inline-flex;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                
+                span {
+                    width: 0.01px;
+                    height: 1.66rem;
+                    padding-left: 15px;
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    span {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

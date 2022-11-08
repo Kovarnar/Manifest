@@ -42,14 +42,14 @@
                         <span class="nav__burger-item"></span>
                     </button>
                 </nav>
-                <div class="header__search search">
-                    <label class="search__lable" for="search">
+                <form class="header__search search">
+                    <input class="search__input" type="search" name="search" id="search" placeholder="Search" autofocus>
+                    <button class="search__button" type="submit" aria-label="submit">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#search"></use>
                         </svg>
-                    </label>
-                    <input class="search__input" type="search" name="search" id="search" placeholder="Search">
-                </div>
+                    </button>
+                </form>
             </div>
         </div>
     </header>
