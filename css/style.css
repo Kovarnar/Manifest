@@ -276,23 +276,6 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
 }
-.main .arrow-view {
-  justify-self: start;
-  background-color: transparent;
-  border: none;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.66;
-  color: #7B7B7B;
-  letter-spacing: 0.1rem;
-}
-.main .arrow-view:hover, .main .arrow-view:active {
-  color: #000;
-}
-.main .arrow-view:hover .icon, .main .arrow-view:active .icon {
-  fill: #000;
-}
 
 .hero {
   min-height: 500px;
@@ -323,6 +306,37 @@ img {
     background-image: url("../img/mobile/bg-image@3x.webp");
   }
 }
+.main .arrow {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.66;
+  color: #7B7B7B;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+.main .arrow:hover, .main .arrow:active {
+  color: #000;
+}
+.main .arrow:hover .icon, .main .arrow:active .icon {
+  fill: #000;
+}
+.main .arrow--view {
+  justify-self: start;
+}
+.main .arrow--read span {
+  letter-spacing: 0;
+  font-size: 0;
+  transition: all 0.3s ease;
+}
+.main .arrow--read:hover span, .main .arrow--read:active span {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -384,6 +398,12 @@ img {
 }
 .blog .content__date {
   margin-bottom: 40px;
+}
+.blog .content__text span {
+  overflow: hidden;
+}
+.blog .content__arrow {
+  display: none;
 }
 
 .posts__block {
@@ -448,30 +468,7 @@ img {
   letter-spacing: 0.1rem;
 }
 .info__arrow {
-  position: relative;
-  left: -100.69px;
   align-self: flex-start;
-  background-color: transparent;
-  border: none;
-}
-.info__arrow::before {
-  content: "Read More";
-  color: transparent;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.66;
-  letter-spacing: 0.1rem;
-  padding-right: 5px;
-}
-.info__arrow:hover, .info__arrow:active {
-  left: 0;
-}
-.info__arrow:hover::before, .info__arrow:active::before {
-  color: #000;
-}
-.info__arrow:hover .icon, .info__arrow:active .icon {
-  fill: #000;
 }
 .info__right {
   display: grid;
@@ -496,6 +493,7 @@ img {
   width: 24px;
   height: 12px;
   fill: #7B7B7B;
+  transition: all 0.3s ease;
 }
 
 .footer .icon {
@@ -605,9 +603,6 @@ img {
     justify-content: space-between;
     margin-bottom: 50px;
   }
-  .main .wrapper--top .arrow-view {
-    justify-self: end;
-  }
   .main .image img {
     width: 100%;
   }
@@ -615,6 +610,11 @@ img {
     font-weight: 600;
     letter-spacing: 0.1rem;
     line-height: 1.358;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main .arrow--view {
+    justify-self: end;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -633,11 +633,14 @@ img {
     order: -1;
   }
   .main .blog__content {
-    overflow: hidden;
+    max-height: 280px;
   }
   .main .blog__content__title {
     margin-bottom: 15px;
     font-size: 1.4375rem;
+  }
+  .main .blog .content__arrow {
+    display: unset;
   }
 }
 @media only screen and (min-width: 768px) {

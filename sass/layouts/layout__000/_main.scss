@@ -37,18 +37,4 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
     }
-    .arrow-view {
-        justify-self: start;
-        background-color: transparent;
-        border: none;
-        @include text;
-        color: $grey500;
-        letter-spacing: 0.1rem;
-        &:hover, &:active {
-            color: $blackColor;
-            .icon {
-                fill: $blackColor;
-            }
-        }
-    }
 }

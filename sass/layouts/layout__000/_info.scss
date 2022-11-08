@@ -20,28 +20,7 @@
     }
 
     &__arrow {
-        position: relative;
-        left: -100.69px;
         align-self: flex-start;
-        background-color: transparent;
-        border: none;
-        
-        &::before {
-            content: 'Read More';
-            color: transparent;
-            @include text;
-            letter-spacing: 0.1rem;
-            padding-right: 5px;
-        }
-        &:hover, &:active {
-            left: 0;
-            &::before {
-                color: $blackColor;
-            }
-            .icon {
-                fill: $blackColor;
-            }
-        }
     }
 
     &__right {
