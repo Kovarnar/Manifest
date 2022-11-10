@@ -19,10 +19,6 @@
         
         }
 
-        &__content {
-            align-self: center;
-            
-        }
         .content {
             &__subtitle {
                 width: 450px;
@@ -38,21 +34,5 @@
                 width: 450px;
             }
         }
-    }
-}
-
-
-.content {
-
-    &__subtitle {
-    }
-
-    &__title {
-    }
-
-    &__date {
-    }
-
-    &__text {
     }
 }

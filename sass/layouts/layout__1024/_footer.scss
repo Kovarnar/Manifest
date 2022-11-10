@@ -1,7 +1,9 @@
 .footer {
-    padding: 70px 15px;
     text-align: left;
-
+    .container {
+        padding: 70px 15px 30px;
+    }
+    
     &__wrapper {
         display: flex;
         justify-content: space-between;
